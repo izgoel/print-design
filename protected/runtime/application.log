@@ -1,0 +1,1257 @@
+2014/04/13 16:45:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "Demo 404 page" was not found.' in C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('Demo 404 page')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/printdesign/index.php?r=site/page&view=Demo+404+page
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/page&view=buttons_and_icons
+---
+2014/04/13 16:54:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/printdesign/index.php?r=login
+---
+2014/04/15 10:51:48 [error] [php] Undefined variable: baseUrl (C:\xampp\htdocs\printdesign\themes\bootstrap\views\layouts\header.php:10)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#6 C:\xampp\htdocs\printdesign\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#10 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(32): SiteController->render()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\layouts\header.php (10)
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\layouts\main.php (22)
+in C:\xampp\htdocs\printdesign\protected\views\layouts\column1.php (6)
+2014/04/18 06:08:53 [error] [exception.CException] exception 'CException' with message 'SiteController has an extra endWidget() call in its view.' in C:\xampp\htdocs\yii\framework\web\CBaseController.php:210
+Stack trace:
+#0 C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php(9): CBaseController->endWidget()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', NULL, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', NULL, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(32): CController->render('index')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/printdesign/index.php?r=site/index
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/page&view=about
+---
+2014/04/18 10:29:00 [error] [php] Use of undefined constant raquo - assumed 'raquo' (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/index
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php (28)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (32)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/18 17:40:36 [error] [php] require_once(slider.php): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php (16)
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php (16)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (32)
+2014/04/18 17:42:30 [error] [php] require_once(/printdesign/themes/bootstrap/views/layouts/slider.php): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php (16)
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php (16)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (32)
+2014/04/18 17:45:05 [error] [php] require_once(../layouts/slider.php): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php (16)
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php (16)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (32)
+2014/04/18 17:46:48 [error] [php] require_once(/printdesign/themes/bootstrap/views/layouts/slider.php): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php (16)
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php (16)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (32)
+2014/04/18 17:48:22 [error] [php] require_once(/printdesign/themes/bootstrap/views/layouts/slider.php): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php (16)
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\index.php (16)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (32)
+2014/04/19 11:52:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "our-services".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('our-services')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('our-services')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/our-servic...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/our-services
+HTTP_REFERER=http://localhost/printdesign/
+---
+2014/04/19 11:54:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "our-services".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('our-services')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('our-services')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/our-servic...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/our-services
+HTTP_REFERER=http://localhost/printdesign/
+---
+2014/04/19 11:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "our-services".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('our-services')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('our-services')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/our-servic...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/our-services
+HTTP_REFERER=http://localhost/printdesign/
+---
+2014/04/19 11:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "services".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('services')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('services')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/services')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/services
+---
+2014/04/19 11:56:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "services".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('services')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('services')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/services')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/services
+---
+2014/04/19 11:56:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "services".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('services')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('services')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/services')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/services
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/services
+---
+2014/04/19 11:56:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "services".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('services')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('services')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/services')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/services
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/contact
+---
+2014/04/19 11:57:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "services".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('services')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('services')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/services')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/services
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/index
+---
+2014/04/19 15:31:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rubbertsamp".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('rubbertsamp')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('rubbertsamp')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/rubbertsam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/rubbertsamp
+---
+2014/04/19 15:32:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rubberstamp".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('rubberstamp')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('rubberstamp')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/rubberstam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/rubberstamp
+---
+2014/04/20 16:58:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "webdesign".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('webdesign')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('webdesign')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/webdesign')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/webdesign
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/index
+---
+2014/04/21 07:03:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "webdesign".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('webdesign')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('webdesign')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/webdesign')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/webdesign
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/index
+---
+2014/04/23 05:49:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/update')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/printdesign/index.php?r=admin/update
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/login
+---
+2014/04/23 06:23:25 [error] [php] Non-static method CHttpRequest::getUserHostAddress() should not be called statically, assuming $this from incompatible context (C:\xampp\htdocs\printdesign\protected\views\admin\index.php:14)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\printdesign\protected\controllers\AdminController.php(40): AdminController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AdminController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AdminController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=admin/
+in C:\xampp\htdocs\printdesign\protected\views\admin\index.php (14)
+in C:\xampp\htdocs\printdesign\protected\controllers\AdminController.php (40)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/23 06:24:55 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "getUserHostAddress".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\printdesign\protected\views\admin\index.php(14): CComponent->__call('getUserHostAddr...', Array)
+#1 C:\xampp\htdocs\printdesign\protected\views\admin\index.php(14): CWebApplication->getUserHostAddress()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', NULL, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', NULL, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\xampp\htdocs\printdesign\protected\controllers\AdminController.php(40): CController->render('index')
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/printdesign/index.php?r=admin/
+---
+2014/04/23 06:43:18 [error] [exception.CException] exception 'CException' with message 'CHttpRequest and its behaviors do not have a method or closure named "userAgent".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\printdesign\protected\views\admin\index.php(15): CComponent->__call('userAgent', Array)
+#1 C:\xampp\htdocs\printdesign\protected\views\admin\index.php(15): CHttpRequest->userAgent()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', NULL, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', NULL, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 C:\xampp\htdocs\printdesign\protected\controllers\AdminController.php(40): CController->render('index')
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/printdesign/index.php?r=admin
+---
+2014/04/24 09:49:37 [error] [php] Undefined variable: car (C:\xampp\htdocs\printdesign\protected\controllers\AdminController.php:45)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AdminController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AdminController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=admin/
+in C:\xampp\htdocs\printdesign\protected\controllers\AdminController.php (45)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/26 14:56:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "flashstamp".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('flashstamp')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('flashstamp')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/flashstam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=admin/flashstamp
+HTTP_REFERER=http://localhost/printdesign/index.php?r=admin/
+---
+2014/04/26 15:02:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "webdesign".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('webdesign')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('webdesign')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/webdesign')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/webdesign
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/services
+---
+2014/04/26 15:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "webdesign".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('webdesign')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('webdesign')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/webdesign')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/webdesign
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/services
+---
+2014/04/26 15:03:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "graphicdesign".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('graphicdesign')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('graphicdesign')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/graphicdes...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/graphicdesign
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/services
+---
+2014/04/27 06:05:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "webdesign".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('webdesign')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('webdesign')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/webdesign')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/webdesign
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/services
+---
+2014/04/29 12:18:55 [error] [php] file_get_contents(services.txt): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (18)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 12:20:02 [error] [php] file_get_contents(services.txt): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (18)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 12:23:55 [error] [php] Use of undefined constant baseUrl - assumed 'baseUrl' (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (18)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 12:25:11 [error] [php] file_get_contents(/printdesign/themes/bootstrap/services.txt): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (18)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 12:25:53 [error] [php] file_get_contents(/printdesign/themes/bootstrap/assets/services.txt): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (18)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 12:38:20 [error] [php] file_get_contents(/printdesign/themes/bootstrap/assets/services.txt): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (18)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 12:39:51 [error] [php] file_get_contents(/printdesign/themes/bootstrap/assets/services.txt): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (18)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 12:53:26 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.getBaseUrl" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModule.php(105): CComponent->__get('getBaseUrl')
+#1 C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php(18): CModule->__get('getBaseUrl')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', NULL, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', NULL, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('services', NULL, true)
+#6 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): CController->render('services')
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('services')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/services')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/printdesign/index.php?r=site/services
+HTTP_REFERER=http://localhost/printdesign/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+---
+2014/04/29 12:55:35 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.pathInfo" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModule.php(105): CComponent->__get('pathInfo')
+#1 C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php(18): CModule->__get('pathInfo')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', NULL, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', NULL, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('services', NULL, true)
+#6 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): CController->render('services')
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('services')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/services')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/printdesign/index.php?r=site/services
+HTTP_REFERER=http://localhost/printdesign/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+---
+2014/04/29 12:57:05 [error] [php] file_get_contents(/printdesign/themes/bootstrap/assets/services.txt): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 12:58:26 [error] [php] file_get_contents(http:///printdesign/themes/bootstrap/assets/services.txt): failed to open stream: operation failed (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 12:59:30 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: No such host is known.  (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:00:29 [error] [php] file_get_contents(/printdesign/themes/bootstrap/assets/services.txt): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:01:10 [error] [php] file_get_contents(/printdesign/themes/bootstrap/assets/services.txt): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:02:15 [error] [php] file_get_contents(/printdesign/themes/bootstrap): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:03:41 [error] [php] file_get_contents(http:://printdesign/themes/bootstrap/assets/services.txt): failed to open stream: Invalid argument (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:09:44 [error] [php] fopen() expects at least 2 parameters, 1 given (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:10:29 [error] [php] fopen(http:://printdesign/themes/bootstrap/assets/services.txt): failed to open stream: Invalid argument (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:11:06 [error] [php] fopen(file:://printdesign/themes/bootstrap/assets/services.txt): failed to open stream: Invalid argument (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:11:40 [error] [php] fopen(): remote host file access not supported, file://printdesign/themes/bootstrap/assets/services.txt (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:12:48 [error] [php] file_get_contents(): remote host file access not supported, file://printdesign/themes/bootstrap/assets/services.txt (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:13:15 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: No such host is known.  (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:15:28 [error] [php] file_get_contents(http://localhost/printdesign/assets/services.txt): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:17:06 [error] [php] file_get_contents(http://localhost/printdesign/assets/services.txt): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:21:44 [error] [php] file_get_contents(http://localhost/printdesign/assets/services.txt): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:23:03 [error] [php] file_get_contents(C:\xampp\htdocs\printdesign\themes\bootstrap\views\site../assets/services.txt): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:23:18 [error] [php] file_get_contents(C:\xampp\htdocs\printdesign\themes\bootstrap\views\site/services.txt): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/services
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (112)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/04/29 13:25:11 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "Preheat oven to 350 degrees F. Butter and flour the bottom and sides of a 9 x 5 x 3 inch loaf pan. Set aside. In a large bowl combine the flour, sugar, baking powder, baking soda, and salt. Set aside.<br>
+In a medium-sized bowl combine the mashed bananas, eggs, melted butter, and vanilla. With a rubber spatula, lightly fold the wet ingredients (banana mixture) into the dry ingredients just until combined and the batter is thick and chunky. 
+(The important thing is not to over mix the batter. You do not want it smooth. Over mixing the batter will yield tough, rubbery bread.)
+Scrape batter into prepared pan and place the <b>slices of banana on top of the batter</b> for garnish. Bake until bread is golden brown and a cake tester inserted in the center comes out clean, about 60 minutes. Place on a wire rack to cool and then remove the bread from the pan. Serve warm or at room temperature.
+
+".' in C:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\services.php(21): CController->renderPartial('Preheat oven to...')
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', NULL, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', NULL, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('services', NULL, true)
+#5 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(112): CController->render('services')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionServices()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('services')
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/services')
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/printdesign/index.php?r=site/services
+HTTP_REFERER=http://localhost/printdesign/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+---
+2014/04/30 07:46:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "flashstamp".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('flashstamp')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('flashstamp')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/flashstam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=admin/flashstamp
+HTTP_REFERER=http://localhost/printdesign/index.php?r=admin/index
+---
+2014/04/30 07:49:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "flashstamp".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('flashstamp')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('flashstamp')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/flashstam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=admin/flashstamp
+HTTP_REFERER=http://localhost/printdesign/index.php?r=admin/index
+---
+2014/04/30 07:52:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "flashstamp".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('flashstamp')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('flashstamp')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/flashstam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=admin/flashstamp
+HTTP_REFERER=http://localhost/printdesign/index.php?r=admin/index
+---
+2014/04/30 07:53:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "flashstamp".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('flashstamp')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('flashstamp')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/flashstam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=admin/flashstamp
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/rubberstamp
+---
+2014/05/01 05:16:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/update')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/printdesign/index.php?r=admin/update
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/login
+---
+2014/05/01 10:22:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "flashstamp".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('flashstamp')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('flashstamp')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/flashstam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=admin/flashstamp
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/rubberstamp
+---
+2014/05/01 12:45:54 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "promotion".' in C:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('promotion', NULL, true)
+#1 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(120): CController->render('promotion')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPromotion()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('promotion')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/promotion')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/printdesign/index.php?r=site/promotion
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/services
+---
+2014/05/01 12:46:16 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "promotion".' in C:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('promotion', NULL, true)
+#1 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(120): CController->render('promotion')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPromotion()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('promotion')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/promotion')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/printdesign/index.php?r=site/promotion
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/rubberstamp
+---
+2014/05/01 12:46:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "flashstamp".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('flashstamp')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('flashstamp')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/flashstam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=admin/flashstamp
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/rubberstamp
+---
+2014/05/01 13:11:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "flashstamp".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('flashstamp')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('flashstamp')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/flashstam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=admin/flashstamp
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/rubberstamp
+---
+2014/05/01 13:15:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('flashstamp')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/flashstam...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/printdesign/index.php?r=admin/flashstamp
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/login
+---
+2014/05/01 13:17:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "flashstamp".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('flashstamp')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('flashstamp')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/flashstamp')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/flashstamp
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/rubberstamp
+---
+2014/05/01 13:17:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "flashstamp".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('flashstamp')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('flashstamp')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/flashstamp')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/printdesign/index.php?r=site/flashstamp
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/rubberstamp
+---
+2014/05/01 13:28:47 [error] [php] file_get_contents(C:\xampp\htdocs\printdesign\themes\bootstrap\views\site/flashstamp.txt): failed to open stream: No such file or directory (C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\flashstamp.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(128): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionFlashstamp()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\printdesign\index.php(13): CWebApplication->run()
+REQUEST_URI=/printdesign/index.php?r=site/flashstamp
+in C:\xampp\htdocs\printdesign\themes\bootstrap\views\site\flashstamp.php (19)
+in C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php (128)
+in C:\xampp\htdocs\printdesign\index.php (13)
+2014/05/01 16:40:15 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "promotion".' in C:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('promotion', NULL, true)
+#1 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(120): CController->render('promotion')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPromotion()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('promotion')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/promotion')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/printdesign/index.php?r=site/promotion
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/flashstamp
+---
+2014/05/01 16:47:29 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "promotion".' in C:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('promotion', NULL, true)
+#1 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(120): CController->render('promotion')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPromotion()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('promotion')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/promotion')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/printdesign/index.php?r=site/promotion
+HTTP_REFERER=http://localhost/printdesign/
+---
+2014/05/02 05:51:09 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "promotion".' in C:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('promotion', NULL, true)
+#1 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(120): CController->render('promotion')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPromotion()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('promotion')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/promotion')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/printdesign/index.php?r=site/promotion
+HTTP_REFERER=http://localhost/printdesign/
+---
+2014/05/02 06:57:16 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "promotion".' in C:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('promotion', NULL, true)
+#1 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(120): CController->render('promotion')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPromotion()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('promotion')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/promotion')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/printdesign/index.php?r=site/promotion
+HTTP_REFERER=http://localhost/printdesign/index.php?r=site/flashstamp
+---
+2014/05/20 11:27:12 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "promotion".' in C:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('promotion', NULL, true)
+#1 C:\xampp\htdocs\printdesign\protected\controllers\SiteController.php(120): CController->render('promotion')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPromotion()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('promotion')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/promotion')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\printdesign\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/printdesign/index.php?r=site/promotion
+HTTP_REFERER=http://localhost/printdesign/
+---
+2014/06/02 07:21:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "graphicdesign".' in D:\development\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\development\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('graphicdesign')
+#1 D:\development\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('graphicdesign')
+#2 D:\development\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/graphicdes...')
+#3 D:\development\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\development\xampp\htdocs\print-design\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/print-design/index.php?r=site/graphicdesign
+HTTP_REFERER=http://localhost/print-design/index.php?r=site/services
+---
