@@ -5,7 +5,8 @@ $this->pageTitle=Yii::app()->name;
 
 ?>
 
-<?php require_once ('slider.php') ?>
+<?php //require_once ('slider.php') ?>
+<?php require_once ('carousel.php') ?>
 <div class="clearfix"></div>
 
 <?php //$this->endWidget(); ?>
@@ -14,7 +15,7 @@ $this->pageTitle=Yii::app()->name;
     <div class="span3">
         <h3><?php echo Yii::t('messages','Graphic design'); ?></h3> 
         <p>เราจะทำให้การออกแบบกราฟิกที่ดีที่สุดสำหรับคุณ</p>
-        <p><a class="btn btn-small btn-warning" href="#">
+        <p><a class="btn btn-small btn-warning" href="<?php echo Yii::app()->getBaseUrl()?>/index.php?r=site/services">
         <?php echo Yii::t('messages','View details')?> &raquo </a></p>
     </div>
     <div class="span3">

@@ -1255,3 +1255,50 @@ Stack trace:
 REQUEST_URI=/print-design/index.php?r=site/graphicdesign
 HTTP_REFERER=http://localhost/print-design/index.php?r=site/services
 ---
+2015/07/19 12:21:00 [error] [php] require_once(carousel.php): failed to open stream: No such file or directory (Unknown:0)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\print-design\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\print-design\index.php(13): CWebApplication->run()
+REQUEST_URI=/print-design/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+in C:\xampp\htdocs\print-design\themes\bootstrap\views\site\index.php (9)
+in C:\xampp\htdocs\print-design\themes\bootstrap\views\site\index.php (9)
+in C:\xampp\htdocs\print-design\protected\controllers\SiteController.php (32)
+2015/07/19 12:21:36 [error] [php] require_once(carousel.php): failed to open stream: No such file or directory (Unknown:0)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\print-design\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\print-design\index.php(13): CWebApplication->run()
+REQUEST_URI=/print-design/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+in C:\xampp\htdocs\print-design\themes\bootstrap\views\site\index.php (9)
+in C:\xampp\htdocs\print-design\themes\bootstrap\views\site\index.php (9)
+in C:\xampp\htdocs\print-design\protected\controllers\SiteController.php (32)
+2015/07/19 17:17:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "graphicdesign".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('graphicdesign')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('graphicdesign')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/graphicdes...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\print-design\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/print-design/index.php?r=site/graphicdesign
+HTTP_REFERER=http://localhost/print-design/index.php?r=site/index
+---
