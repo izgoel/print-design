@@ -127,5 +127,8 @@ class SiteController extends Controller
         {
             $this->render('flashstamp');
         }
+        public function actionMobile(){
+            $this->render('mobile');
+        }
         
 }
