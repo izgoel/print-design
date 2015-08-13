@@ -1,28 +1,12 @@
 <div class="row-fluid">
     <div class="span3">
-       <?php $this->beginWidget('zii.widgets.CPortlet', array(
-                   'title'=>Yii::t('messages',''),
-               ));?>
-        <?php $this->widget('bootstrap.widgets.TbMenu', array(
-    'type'=>'tabs', // '', 'tabs', 'pills' (or 'list')
-    'stacked'=>true, // whether this is a stacked menu
-    'items'=>array(
-        array('label'=>Yii::t('messages','Rubberstamp services'), 'url'=>array('/site/rubberstamp'), 'active'=>true),
-        array('label'=>Yii::t('messages','Rubberstamp prices'), 'url'=>array('/admin/index')),
-        array('label'=>Yii::t('messages','Flash stamp machine'), 'url'=>array('/site/flashstamp')),
-    ),
-)); ?>
-    <?php $this->endWidget();?>    
     </div>
     <div class="span9">
         <div class="well-small">
-            <h2><?php echo Yii::t('messages','Rubberstamp services')?></h2>
+            <h2><?php echo Yii::t('messages','See how to apply the protector')?></h2>
         </div>
-        <!--<img src="images/stamp-offset-1.png" alt="text" style="float: left; margin-right:5px;"/>-->
-        <?php $abc=dirname(__FILE__)?>
-        <?php $text = file_get_contents ($abc.'/rubberstamp.txt' );?>
-        <!--<p style="text-align: justify;"><?php //echo $text ?></p>-->
-        <?php echo $text ?>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qdBxJkjd6UI" frameborder="0" allowfullscreen></iframe>
+            <!--<object height="350" width="425"><param name="movie" value="https://youtu.be/DL3M3Q6zPfc" /><embed height="350" src="https://youtu.be/DL3M3Q6zPfc" type="application/x-shockwave-flash" width="425"></embed></object>-->
     </div>
     
 </div>
